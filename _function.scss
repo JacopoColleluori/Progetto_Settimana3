@@ -1,0 +1,8 @@
+@function set-text-color($color) {
+    @if (lightness($color) > 50) {
+      @return darken($color, 100%); // return black
+    } @else {
+      @return lighten($color, 100%); // return white
+    }
+  }
+  
